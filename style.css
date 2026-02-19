@@ -1,0 +1,380 @@
+html, body, main {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#main-content{
+    display: flex;
+
+}
+
+#song-content /* sets spacing and format for the songs */{
+    margin-top: 15px;
+    margin-left: 30px;
+    border-radius: 10px;
+    width: 1150px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(18, 18, 18);
+    padding: 0 40px 0 40px;
+}
+#top-bar /*styles the navigation bar */ {
+    width: 100%;
+    height: 65px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+#site-search /* styles search bar*/ {
+    padding: 0px 15px;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 24px;
+    width: 300px;
+    height: 40px;
+    transition: background-color 0.2s;
+}
+
+#search-elements /* formats children of top bar */{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#site-search:hover {
+    background-color: rgb(60, 60, 60);
+}
+
+#site-search:focus {
+    outline: none;
+    background-color: rgb(80, 80, 80);
+}
+
+#site-search::placeholder {
+    color: rgb(180, 180, 180);
+}
+
+#navigation-buttons {
+    position: absolute;
+    left: 20px;
+}
+
+#back-button, #forward-button {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#home-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 24px;
+    background-color: rgb(40, 40, 40);
+    border: none;
+    cursor: pointer;
+}
+
+#home-button-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+#profile-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 24px;
+    background-color: rgb(210, 207, 207);
+    border: 3px solid rgb(40, 40, 40);
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+#profile-picture{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#all-categories:hover, #music-category:hover, #podcasts-category:hover, #audiobooks-category:hover{
+    background-color: rgb(39, 43, 43);
+}
+
+#back-button:hover, #forward-button:hover, #home-button:hover, #profile-button:hover{
+    background-color: rgb(84, 82, 82);
+}
+
+#side-bar{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    align-items: center;
+    overflow: auto;
+    gap: 20px;
+    width: 70px;
+    height: 760px;
+    border-radius: 5px;
+    background-color: rgb(27, 26, 26);
+}
+
+
+#library-image, #liked-songs-button-image, #podcast-image, #dj-side-bar-image, #mel-image, #drake-image, #coldplay-image{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+#library-button, #create-playlist-button, #liked-songs-button, #podcast-button, #dj-side-bar-button, #mel-button,#drake-button, #coldplay-button{
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    padding: 0;
+    color: white;
+    border: transparent;
+
+}
+
+#library-button:hover, #create-playlist-button:hover, #liked-songs-button:hover, #podcast-button:hover, #dj-side-bar-button:hover, #mel-button:hover,#drake-button:hover, #coldplay-button:hover{
+    background-color: rgb(255, 251, 251);
+    transition: background-color 0.4s
+}
+
+#liked-songs-button{
+    border-radius: 100%;
+}
+#library-button{
+    background-color: rgb(27, 26, 26 );
+    margin-top: 20px;
+}
+
+
+#create-playlist-button{
+    background-color: rgb(77, 74, 74);
+    border-radius: 50%;
+}
+
+#main-content {
+    padding: 0 20px 0 0;
+}
+
+#recomended-categories {
+    display: flex;
+    flex-direction: row;
+}
+
+#all-categories, #music-category, #podcasts-category, #audiobooks-category {
+    margin-top: 15px;
+    margin-right: 15px;
+    height: 30px;
+    border-radius: 24px;
+    border: none;
+    background-color: rgb(40, 47, 48);
+    color: white;
+    padding: 0px 10px 0px 10px;
+    cursor: pointer;
+}
+
+#all-categories {
+    width: 40px;
+}
+
+#music-category {
+    width: 60px;
+}
+
+#podcasts-category {
+    width: 80px;
+}
+
+#audiobooks-category {
+    width: 90px;
+}
+
+#recommended-playlists {
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px;
+    grid-template-rows: 75px 75px;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.playlist-cover {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#DJ-assistant, #liked-songs-playlist, #daniel-caeser-playlist, #bad-bunny-album, 
+#laufey-playlist, #steve-lacy-song, #drake-playlist, #never-enough {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(64, 63, 63);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#DJ-assistant:hover, #liked-songs-playlist:hover, #daniel-caeser-playlist:hover, 
+#bad-bunny-album:hover, #laufey-playlist:hover, #steve-lacy-song:hover, 
+#drake-playlist:hover, #never-enough:hover {
+    background-color: rgb(84, 82, 82);
+}
+
+.playlist-name {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+#more-like-playlist-header{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    position:relative;
+}
+
+#more-like-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5px;      
+    margin-left: 15px;
+    font-family: arial, Arial, Helvetica, sans-serif;
+}
+
+#bad-bunny-cover{
+    border-radius: 100%;
+    width: 65px;
+    height: 65px;
+    /* ask how margin-top: affects text */
+}
+
+#more-like-bb{
+    color: grey;
+    font-size: 15px;
+}
+
+#title-bb{
+    color: white;
+    font-size: 30px;
+    margin-top: 0%;
+}
+
+#show-all-button{
+    position:absolute;
+    margin-right: 0px;
+    right: 0;
+    top: 5px;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+
+#playing-now-bar{
+    position: absolute;
+    left: 0px;
+    top: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 100%;
+    background-color: black;
+    gap: 40px;
+}
+
+
+#shuffle-button, #back-track-button, #play-button, #skip-button{
+    height: 40px;
+    width: 40px;
+    border: transparent;
+    border-radius: 50px;
+    background-color: black;
+    overflow: hidden;
+    padding: 0;
+}
+
+
+#shuffle-image, #back-track-image, #play-image, #skip-image{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+#bad-bunny-playlists{
+    display: flex;
+    gap: 10px;
+}
+
+
+#verano-album, #this-is-marias{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+}
+
+#verano-album, #this-is-marias, #sza-radio, #submarine{ /* sets playlist height and padding*/
+    padding: 8px;
+    width: 170px;
+    border-radius: 5px;
+}
+
+
+#verano-title, #marias-title, #sza-description, #submarine-title/* title font and spacing from image */{
+    margin: 8px 0 0 0;
+    
+    
+}
+
+#verano-title, #verano-artist, #marias-title, #sza-description, #submarine-artist, #submarine-title{
+    font-family: arial, Arial, Helvetica, sans-serif;
+
+}
+
+#verano-artist, #submarine-artist /* sets artist title spacing*/ {
+    margin-top: 2px; 
+}
+
+#verano-title, #marias-title, #submarine-title /* playlist title */{
+    color:white;
+    font-size: 16px;
+}
+ #verano-artist, #sza-description, #submarine-artist/* Artist name/description */{
+    color: rgb(197, 190, 190);
+    font-size: 13px;
+}
+
+#verano-image, #marias-image, #sza-image, #submarine-image /* Album cover */{
+    height: 170px;
+    width: 170px;
+    border-radius: 8px;
+    
+}
+
+
+#verano-album:hover, #this-is-marias:hover, #sza-radio:hover, #submarine:hover{
+    background-color: rgb(84, 82, 82);
+    transition: background-color 0.4s
+
+}
+

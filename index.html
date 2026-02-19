@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="top-bar">
+        <div id="navigation-buttons">
+            <button id="back-button">←</button>
+            <button id="forward-button">→</button>    
+        </div>
+        <div id="search-elements">
+            <button id="home-button">
+                <img src = "https://cdn3.emoji.gg/emojis/7184-spotify-home.png" id = "home-button-image">
+            </button>
+            <input type="search" id="site-search" placeholder="What do you want to play?">
+        </div>
+        <button id="profile-button">
+            <img src = "https://wallpapers.com/images/hd/tiktok-profile-pictures-4fewogsfut7q7qjk.jpg" id = "profile-picture">
+        </button>
+    </nav>
+    <main id = "main-content">
+        <aside id = side-bar>
+            <button id = "library-button" class = "side-bar-button">
+                <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRRER-jmDL_536YJ2jSioqNRxEkkMJAuUSGQ&s" id = "library-image">
+            </button>
+            <button id = "create-playlist-button" class = "side-bar-button">+</button>
+            <button id = "liked-songs-button" class = "side-bar-button">
+                <img src = "https://misc.scdn.co/liked-songs/liked-songs-300.jpg" id = liked-songs-button-image>
+            </button>
+            <button id = "podcast-button">
+                <img src = "https://spotifycrypx.netlify.app/Assets/Saved.png" id = "podcast-image">
+            </button>
+            <button id = "dj-side-bar-button">
+                <img src = "https://theplayground.co.uk/wp-content/uploads/2024/10/hero-image.webp" id = "dj-side-bar-image">
+            </button>
+            <button id = "mel-button">
+                <img src = "https://m.media-amazon.com/images/S/dmp-catalog-images-prod/images/72cc76f8-c4d0-4d99-b3bf-b3bc3cab506b/72cc76f8-c4d0-4d99-b3bf-b3bc3cab506b--503182027.jpg" id = "mel-image">
+            </button>
+            <button id = "drake-button">
+                <img src = "https://www.levelman.com/content/images/2022/11/Thank-Me-Later-1.jpg" id = "drake-image">
+            </button>
+            <button id = "coldplay-button">
+               <img src =  "https://i.scdn.co/image/ab67616d0000b2739164bafe9aaa168d93f4816a" id = "coldplay-image">
+            </button>
+            </button>
+        </aside>
+        <div id = song-content>
+            <section id="recomended-categories">
+                <button id="all-categories">All</button>
+                <button id="music-category">Music</button>
+                <button id="podcasts-category">Podcasts</button>
+                <button id="audiobooks-category">Audiobooks</button>
+            </section>
+            <section id="recommended-playlists">
+                <button id="DJ-assistant"> 
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9UN7H2KdWSR-cN5UakhK0W5YaDlOr3z3x1Q&s" alt="DJ Assistant Image" class="playlist-cover">
+                    <b class="playlist-name">DJ</b> 
+                </button>
+                <button id="liked-songs-playlist">
+                    <img src="https://misc.scdn.co/liked-songs/liked-songs-300.jpg" alt="Liked Songs Image" class="playlist-cover">
+                    <b class="playlist-name">Liked Songs</b>
+                </button>
+                <button id="daniel-caeser-playlist"> 
+                    <img src="https://i.scdn.co/image/ab67616100005174e4d94f7cbebb17504c25d419" alt="Daniel Caeser Profile Image" class="playlist-cover">
+                    <b class="playlist-name">Daniel Caeser</b>
+                </button>
+                <button id="bad-bunny-album">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/e/ef/Bad_Bunny_-_Deb%C3%AD_Tirar_M%C3%A1s_Fotos.png" class="playlist-cover">
+                    <b class="playlist-name">DeBÍ TiRAR MáS FOToS</b>
+                </button>
+                <button id="laufey-playlist">
+                    <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/thisisv3/7gW0r5CkdEUMm42w9XpyZO/ar" class="playlist-cover">
+                    <b class="playlist-name">This is Laufey</b>
+                </button>
+                <button id="steve-lacy-song">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/de/Steve_Lacy_-_Gemini_Rights.png/250px-Steve_Lacy_-_Gemini_Rights.png" class="playlist-cover">
+                    <b class="playlist-name">Give You The World</b>
+                </button>
+                <button id="drake-playlist">
+                    <img src="https://i.scdn.co/image/ab67706f00000002e47c587e5107b565327a2172" class="playlist-cover">
+                    <b class="playlist-name">This is Drake</b>
+                </button>
+                <button id="never-enough">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/c/c0/Daniel_Caesar_-_Never_Enough.png" class="playlist-cover">
+                    <b class="playlist-name">Never Enough</b>
+                </button>
+            </section>
+            <section id = "more-like-playlist-header">
+                <img src = "https://i.scdn.co/image/ab6761610000e5eb81f47f44084e0a09b5f0fa13" alt="Bad Bunny Cover" id = "bad-bunny-cover">
+                <div id = "more-like-text-container">
+                    <p class = "more-like-text" id = "more-like-bb"> More like</p>
+                    <h2 class = "more-like-text" id = "title-bb">Bad Bunny</h2>
+                </div>
+                <button id="show-all-button"><b>Show All</b></button>
+            </section>
+            <section id = "bad-bunny-playlists">
+                <a id = "verano-album" href = "">
+                    <img src="https://media.pitchfork.com/photos/627425dbc85171592b8a6e6a/master/pass/Bad-Bunny-Un-Verano-Sin-Ti.jpg" alt="Bad Bunny - Un Verano Sin Ti Album Cover" id = "verano-image">
+                    <p id = "verano-title" class = "bunny-text">Un Verano Sin Ti </p>
+                    <p id = "verano-artist" class = "bunny-text">Bad Bunny</p>
+                </a>
+                <a id = "this-is-marias" href = "">
+                    <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/2sSGPbdZJkaSE2AbcGOACx/en" alt="The Marias Radio" id = "marias-image">
+                    <p id = "marias-title" class = "marias-text">This Marías Radio </p>
+                </a>
+                <a id = "sza-radio">
+                    <img src = "https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/7tYKF4w9nC0nq9CsPZTHyP/de" alt = "SZA Radio" id = "sza-image">
+                    <p id = "sza-description">With Frank Ocean, Kendrick Lamar, Daniel Caeser...</p>
+                </a>
+                <a id = "submarine">
+                    <img src = "https://i.scdn.co/image/ab67616d0000b273b19ac38a59cddd80da3cedcb" id = submarine-image>
+                    <p id = "submarine-title">Submarine</p>
+                    <p id = "submarine-artist">The Marías</p>
+                </a>
+            </section>
+            <section id = "playing-now-bar">
+                <button id = "shuffle-button">
+                    <img src = "https://www.shareicon.net/download/2016/03/27/465669_media_256x256.png" id = "shuffle-image">
+                </button>
+                <button id = "back-track-button">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M19 5v14h-2V5h2zM6 12l9-7v14l-9-7z'/%3E%3C/svg%3E" id="back-track-image" alt="Back track">
+                </button>
+                <button id = "play-button">
+                    <img src = "https://t3.ftcdn.net/jpg/05/32/93/48/360_F_532934869_5a6YlokyUo2eqbDzC9OaqxMVIf1EEalw.jpg" id = "play-image">
+                </button>
+                <button id = "skip-button">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M5 5v14h2V5H5zM9 5l9 7-9 7V5z'/%3E%3C/svg%3E" id="skip-image" alt="Skip track">
+                </button>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
